@@ -23,10 +23,12 @@ struct ContentView: View {
                     }
                     .fill(Color.blue)
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, 20)
+                    .clipped()
             )
             .padding(.top, 20)
             .padding(.leading, 20)
             .padding(.bottom, 20)
+            .clipped()
     }
 }
 
