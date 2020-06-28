@@ -22,11 +22,11 @@ struct ContentView: View {
                                height: $0.size.height)
                     }
                     .fill(Color.blue)
-                    .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, 10)
+                    .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, 20)
             )
-            .padding(.top, 10)
-            .padding(.leading, 10)
-            .padding(.bottom, 10)
+            .padding(.top, 20)
+            .padding(.leading, 20)
+            .padding(.bottom, 20)
     }
 }
 
@@ -49,6 +49,6 @@ struct FrameAdjustedShape<Original: Shape>: Shape {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .frame(width: 300, height: 100, alignment: .center)
+            .previewLayout(.fixed(width: 400.0, height: 150))
     }
 }
